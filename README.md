@@ -1,3 +1,3 @@
 # ContactForm
 
-A contact form made as a self picked exercise.
+coded as a self picked exercise.
