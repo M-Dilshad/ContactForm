@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="form-page-header animate__animated animate__bounceInLeft">
+        <h1>Please fill out this form with correct info.</h1>
+        <span>Practice Form, Just For You.</span>
+      </header>
+      <div class="form-wrap animate__animated animate__bounceInRight">
+        <form
+          class="form-block"
+          action="https://formspree.io/f/mayvppzl"
+          autocomplete="off"
+          id="contact-form"
+          method="post"
+        >
+          <label class="form-label required" for="full-name">Full Name</label>
+          <input
+            id="full-name"
+            type="text"
+            class="form-input"
+            required
+            placeholder="John Smith"
+            minlength="3"
+            maxlength="32"
+          />
+
+          <label class="form-label required" for="email-address"
+            >Email Address</label
+          >
+          <input
+            type="email"
+            id="email-address"
+            class="form-input"
+            required
+            placeholder="example@gmail.com"
+            maxlength="32"
+          />
+
+          <label class="form-label" for="date-of-birth"
+            >Date of Birth<span class="optional-key"> (Optional)</span></label
+          >
+          <input type="date" id="date-of-birth" class="form-input" />
+
+          <label class="form-label" for="phone-no"
+            >Phone No.<span class="optional-key"> (Optional)</span></label
+          >
+          <input
+            pattern="[0-9]{11}"
+            type="tel"
+            id="phone-no"
+            class="form-input"
+            placeholder="07501234567"
+          />
+
+          <label for="subject" class="form-label required">Subject</label>
+          <select class="form-input" id="subject" required>
+            <option value=""></option>
+            <option value="help">I Need More Info</option>
+            <option value="hire">I Want to Hire You</option>
+            <option value="friend">I Want to Be Your Friend</option>
+            <option value="join">I Want to Join Your Team</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label class="form-label question" for=""
+            >How Did You Hear About Us?</label
+          >
+
+          <div class="form-radio">
+            <input
+              type="radio"
+              id="facebook"
+              class="form-input--radio"
+              name="ad"
+            />
+            <label class="form-label--radio" for="facebook">Facebook</label>
+          </div>
+
+          <!-- <div class="form-radio">
+            <input
+              type="radio"
+              id="friends"
+              class="form-input--radio"
+              name="ad"
+            />
+            <label class="form-label--radio" for="friends">Friends</label>
+          </div> -->
+          <div class="form-radio">
+            <input
+              type="radio"
+              id="other"
+              class="form-input--radio"
+              name="ad"
+            />
+            <label class="form-label--radio" for="other">Other</label>
+          </div>
+
+          <div class="form-message">
+            <label class="form-label required" for="message-box"
+              >Your Message</label
+            >
+            <textarea
+              name="message"
+              id="message-box"
+              form="contact-form"
+              cols="30"
+              rows="10"
+              placeholder="Type your message here."
+              required
+              class="contact-form-message"
+              maxlength="8192"
+            ></textarea>
+          </div>
+          <button class="form-btn-submit" type="submit">Submit</button>
+        </form>
+      </div>
+      <footer>
+        <a class="" href="https://drive.google.com/file/d/1O7F8Wg1_Xr45uF59r_PHONiKubPFM5_Y/view?usp=sharing">Download Form Code</a>
+        <span>Practice Form, Just For You.</span>
+      </footer>
+    </div>
+  </body>
+</html>

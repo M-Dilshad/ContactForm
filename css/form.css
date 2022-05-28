@@ -1,0 +1,197 @@
+/* Colors are set manualy to prevent common name conflicts */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-wrapper {
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/form-background.svg);
+    background-size: cover;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.form-wrap {
+    height: 100%;
+    width: 65rem;
+    background: rgba(2, 3, 3, 0.2);
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.form-block {
+    padding: 5rem;
+}
+
+.form-input {
+    padding: 0 1rem;
+    margin: 1.5rem 0 3rem 0;
+    width: 100%;
+    font-size: 2rem;
+    height: 4rem;
+    border-radius: 3px;
+    display: block;
+    
+}
+
+.form-input:hover, .contact-form-message:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 2px 0 steelblue;
+    outline: 0;
+    transition: all 0.2s;
+}
+
+.form-input:focus, .contact-form-message:focus {
+    box-shadow: 0 0 2px 2px dodgerblue;
+    outline: 0;
+    transition: all 0.2s;
+}
+
+
+.form-label {
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.optional-key {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255,0.7);
+}
+
+
+.required::after {
+    content: " *";
+    color: red;
+}
+
+
+
+.form-radio {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+
+.form-label--radio {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.form-input--radio {
+    border: 1px solid #1B1B1E;
+    border-radius: 3px;
+    height: 4rem;
+    width: 22px;
+}
+
+
+.contact-form-message {
+    height: 10rem;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 3px;
+
+}
+
+
+
+.form-message {
+    margin: 3rem 0;
+}
+
+.form-page-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 4rem;
+    color: white;
+    padding: 5rem 0 3rem 0;
+}
+
+.form-page-header > h1 {
+    font-size: 3rem;
+}
+
+.form-page-header > span {
+    font-size: 2rem;
+    font-style: italic;
+    color:rgb(221, 221, 221);
+}
+
+.form-btn-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    font-size: 2.5rem;
+    background-color: #1B1B1E;
+    color: white;
+    border: 1px solid rgba(70, 131, 180, 0.452);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.form-btn-submit:hover {
+    border: 3px solid steelblue;
+    transition: border 0.2s;
+    outline: 0;
+}
+
+footer {
+    font-size: 1.5rem;
+    font-style: italic;
+    color:rgb(221, 221, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+    gap: 2rem;
+}
+
+@media screen and (max-width:600px){
+
+    .form-wrap {
+        height: 100%;
+        width: 100%;    
+    }
+
+    #date-of-birth {
+        min-width: 93%;
+        display: flex;
+    }
+    
+}
+
+footer > a {
+    color: white;
+    font-size: 2rem;
+    border: 1px solid white;
+    padding: 1rem;
+    background-color: #1B1B1E;
+}
+
+footer > a:hover {
+    border: 1px solid #1B1B1E;
+    color: #1B1B1E;
+    background-color: #fff;
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
